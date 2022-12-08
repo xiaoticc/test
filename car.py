@@ -18,7 +18,7 @@ class Car(pygame.sprite.Sprite):
         if self.rect.x <= 500 and self.flag:
             self.rect.x += 10
         else:
-            pygame.transform.flip(self.image, True, True)
+            self.image = pygame.transform.flip(self.image, True, False)
             self.rect.x -= 10
             self.flag = False
 
